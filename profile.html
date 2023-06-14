@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="AnimeTopia" content="AnimePlatform">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Fonts -->
+
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-in.css' rel='stylesheet'>
+    <!-- icon -->
+
+    <link rel="stylesheet" href="./css/profile.css">
+    <title>AnimeTopia</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="assets/Anitopia.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./anime.html">Anime</a></li>
+                <li><a href="./movie.html">Movies</a></li>
+                <li><a href="./characters.html">Characters</a></li>
+                <li><a class="gg-log-in" onclick="toggleMenu()"></a></li>
+            </ul>
+            
+            <div class="sub-menu-wrap" id="subMenu" style="z-index: 2">
+               <!--put rest of code on js-->
+            </div>
+        </nav>
+    </header>
+    <section class="wrrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </section>
+    <main>
+        
+        
+        <!-- video (message to:  the youth of the future) -->
+        <div class="video-message" style="margin-top: 40px; position: relative; z-index: 1;">
+            <div>
+                <h1 class="p-1" id="username">
+                    Welcome &nbsp;<span id="nameUser"></span>
+                </h1> 
+                <h1 class="message">A message to:  the youth of the future</h1>
+            </div>
+            <video controls="" loop="" width="18%" style="background-color: transparent;">
+                <source src="messege.mp4" type="video/mp4">
+            </video>    
+        </div>
+          
+        <div class="fav-anime p-1 m-2">
+            <h2>
+                Your Favorite Anime
+            </h2>
+            <div class="card-list" id="favAnime">
+               
+            </div>
+        </div>
+        <div class="fav-anime p-1 m-1">
+            <h2>
+                Your Favorite Movies
+            </h2>
+            <div class="card-list" id="favMovie">
+              
+               
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="social_icons">
+            <a href="https://github.com"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <div class="footer-content"> © 2023 ANITOPIA - TripleOne </div>
+        </div>
+    </footer>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+    <script src="./js/profile.js"></script>
+</body>
+
+</html>
